@@ -2,7 +2,7 @@
 
 
 /**
- * Using put() function to print a sentence
+ * main - Using put() function to print a sentence
  *
  * Return: Always 0 (Success)
  */
