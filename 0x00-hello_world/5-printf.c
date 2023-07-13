@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-/*
- * main - Entry point
+/**
+ * main - Using printf function to print a sentence
  *
- * Return: Always 0 (Success)
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
