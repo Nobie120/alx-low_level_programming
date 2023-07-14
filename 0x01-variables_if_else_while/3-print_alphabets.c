@@ -8,19 +8,22 @@
 
 int main(void)
 {
-	char ch = 'a';
-	int i = 0;
+	char ch;
+	int i;
 
+	ch = 'a';
+	i = 0;
 	while (i <= 25)
 	{
 		putchar(ch);
 		ch++;
 		i++;
 	}
+	char sh;
+	int l;
 
-	char sh = 'A';
-	int l = 0;
-
+	sh = 'A';
+	l = 0;
 	while (l <= 25)
 	{
 		putchar(sh);
