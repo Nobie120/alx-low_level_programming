@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	char ch;
-	int i;
+	char ch, sh;
+	int i, l;
 
 	ch = 'a';
 	i = 0;
@@ -19,8 +19,6 @@ int main(void)
 		ch++;
 		i++;
 	}
-	char sh;
-	int l;
 
 	sh = 'A';
 	l = 0;
