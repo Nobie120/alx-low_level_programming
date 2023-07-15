@@ -14,18 +14,24 @@ int main(void)
 	{
 		for (j = 0; j < 100; j++)
 		{
-			n1 = i / 10;
-			n2 = i % 10;
-			n3 = j / 10;
-			n4 = j % 10;
+			if (i < j)
+			{
+				n1 = i / 10;
+				n2 = i % 10;
+				n3 = j / 10;
+				n4 = j % 10;
 
-			putchar('0' + n1);
-			putchar('0' + n2);
-			putchar(' ');
-			putchar('0' + n3);
-			putchar('0' + n4);
-			putchar(',');
-			putchar(' ');
+				putchar('0' + n1);
+				putchar('0' + n2);
+				putchar(' ');
+				putchar('0' + n3);
+				putchar('0' + n4);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
