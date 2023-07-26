@@ -1,4 +1,4 @@
-# Laerning Objectives
+# Learning Objectives
 
 1. What are pointers and how to use them
 2. what are arrays and how to use them
