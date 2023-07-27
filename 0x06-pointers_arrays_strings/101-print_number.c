@@ -14,14 +14,19 @@ void  print_number(int n)
 		_putchar('-');
 		num = -n;
 	}
-
 	while (num / i >= 10)
 		i *= 10;
-
-	while (i != 0)
+	if (num == 0)
 	{
-		_putchar((num / i) + '0');
-		num %= i;
-		i /= 10;
+		_putchar('0');
+	}
+	else
+	{
+		while (i != 0)
+		{
+			_putchar((num / i) + '0');
+			num %= i;
+			i /= 10;
+		}
 	}
 }
