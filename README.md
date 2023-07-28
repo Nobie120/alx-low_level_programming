@@ -1,4 +1,5 @@
 # Learning Objectives 
 ## C programming Language
 
-* All concept of c programming as a low-level programming language
+1. All concept of c programming as a low-level programming language
+2. Reverse Engineering and Memory allocations
