@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 
 	if (argc < 2)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
 	for (i = 1; i < argc; i++)
