@@ -1,6 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+
+/**
+ * _puts - prints a string followed by a new line
+ * @str:Thes string
+ */
+
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+}
 
 /**
  * _atoi - converts string to interger
@@ -62,7 +77,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		puts("Error");
+		_puts("Error");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
