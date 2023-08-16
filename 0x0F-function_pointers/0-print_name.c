@@ -1,9 +1,21 @@
 #include "function_pointers.h"
 
 /**
- * print_name - Function that prints name
- * @name:the name to be printed
- * @f:Pointer to a function that prints a name
+ * f - prints string
+ * @s:The string
+ */
+
+void f(char *s)
+{
+	int i = 0;
+
+	for (i = 0; s[i]; i++)
+		putchar(s[i]);
+}
+/**
+ * print_name - prints name
+ * @name :name
+ * @f:ffunction pointer
  */
 
 void print_name(char *name, void (*f)(char *))
