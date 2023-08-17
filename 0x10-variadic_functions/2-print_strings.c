@@ -17,6 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i--)
 	{
 		char *s = va_arg(op, char *);
+
 		if (s)
 			printf("%s", s);
 		else
