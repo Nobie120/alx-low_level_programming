@@ -3,7 +3,7 @@
 /**
  * sum_them_all - Returns sum of the arguements
  * @n:The 1st arguement
- *
+ * @...:The intergers to add
  *
  * Return:The sum
  */
