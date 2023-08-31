@@ -7,13 +7,18 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
+	int bit = sizeof(n) * 8, printed = 0;
 
-	for (i =  8; i >= 0; i--)
+	while (bit)
 	{
-		if (n & (1 << i))
-			printf("1");
-		else
-			printf("0");
+		if (n & 1L << --bit)
+		{
+			_putchar('1');
+			printed++;
+		}
+		else if (printed)
+			_putchar('0');
 	}
+	if (!printed)
+		_putchar('0');
 }
