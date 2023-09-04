@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+ * _strlen - finds len of str
+ * @s:string
+ *
+ * Return:lenght
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		i++;
+	return (i);
+}
+/**
  * create_file - function that creates a file.
  * @filename:the name of the file to create
  * @text_content:text_content is a NULL
