@@ -89,8 +89,6 @@ Your program should return 0
 Your program should compile without warning when using the -Wall gcc option
 
 ### 6. Size is not grandeur, and territory does not make a nation
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
 Write a C program that prints the size of various types on the computer it is compiled and run on.
 
 You should produce the exact same output as in the example
