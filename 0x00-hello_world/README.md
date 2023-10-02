@@ -44,3 +44,43 @@
 | 6. Size is not grandeur, and territory does not make a nation | [6-size.c](./6-size.c) |
 | 7. Intel | [100-intel](./100-intel) |
 | 8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity | [101-quote.c](./101-quote.c) |
+
+
+
+
+
+
+
+0. Preprocessor
+mandatory
+Score: 100.0% (Checks completed: 100.0%)
+Write a script that runs a C file through the preprocessor and save the result into another file.
+
+The C file name will be saved in the variable $CFILE
+The output should be saved in the file c
+julien@ubuntu:~/c/0x00$ cat main.c 
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    return (0);
+}
+julien@ubuntu:~/c/0x00$ export CFILE=main.c
+julien@ubuntu:~/c/0x00$ ./0-preprocessor 
+julien@ubuntu:~/c/0x00$ tail c
+# 942 "/usr/include/stdio.h" 3 4
+
+# 2 "main.c" 2
+
+
+# 3 "main.c"
+int main(void)
+{
+ return (0);
+}
+julien@ubuntu:~/c/0x00$ 
