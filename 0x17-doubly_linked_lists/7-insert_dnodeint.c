@@ -2,8 +2,9 @@
 
 /**
  * insert_dnodeint_at_index -  inserts a new node at a given position.
- * @head:pointer to the first
+ * @h:pointer to the first
  * @idx:index of the list where the new node should be added
+ * @n:the value to be put in the newnode
  *
  * Return:the address of the new node, or NULL if it failed
  */
