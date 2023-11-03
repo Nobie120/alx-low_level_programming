@@ -55,13 +55,13 @@ hash_node_t *hash_node_create(const char *key, char *value)
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (NULL);
-	node->key = key;
+	node->key = strdup(key);
 	if (key == NULL)
 	{
 		free(node);
 		return (NULL);
 	}
-	node->value = value;
+	node->value = strdup(value);
 	if (key == NULL)
 	{
 		free(node->key);
